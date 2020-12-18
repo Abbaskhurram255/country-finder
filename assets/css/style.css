@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway|Pacifico");
+:root {
+  font-size: 16px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  min-height: 100vh;
+  background-color: #444;
+  color: #eee; }
+
+header {
+  background-color: #111;
+  font-family: 'Raleway', sans-serif;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px; }
+  @media screen and (max-width: 620px) {
+    header {
+      flex-direction: column;
+      padding: 5px 5%; } }
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: normal; }
+  header .countryFinderInput {
+    font-size: .9rem; }
+    @media screen and (max-width: 620px) {
+      header .countryFinderInput {
+        margin-top: 10px; } }
+    @media screen and (max-width: 620px) {
+      header .countryFinderInput label {
+        display: block; } }
+    header .countryFinderInput input {
+      padding: 5px;
+      font-family: 'Raleway', sans-serif; }
+      @media screen and (max-width: 620px) {
+        header .countryFinderInput input {
+          margin: 3px 0;
+          width: 100%; } }
+      header .countryFinderInput input[type="submit"] {
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #999;
+        font-size: 1.1rem; }
+        header .countryFinderInput input[type="submit"]:hover {
+          background-color: #444; }
+
+.countryFinderOutput {
+  padding: 30px 3vw;
+  display: flex;
+  align-self: stretch; }
+  @media screen and (max-width: 400px) {
+    .countryFinderOutput {
+      flex-direction: column; } }
+  .countryFinderOutput .countryFlag {
+    padding-right: 20px; }
+    @media screen and (max-width: 400px) {
+      .countryFinderOutput .countryFlag {
+        padding-right: 0;
+        padding-bottom: 20px; } }
+    .countryFinderOutput .countryFlag img {
+      width: 200px; }
+      @media screen and (max-width: 400px) {
+        .countryFinderOutput .countryFlag img {
+          width: 100%; } }
+  .countryFinderOutput .countryInfo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 350px; }
+    .countryFinderOutput .countryInfo h2 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+      padding-bottom: 15px; }
+      .countryFinderOutput .countryInfo h2 .preHeadline {
+        font-size: .7rem;
+        font-weight: normal;
+        margin-bottom: 2px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  height: 35px;
+  background-color: #111;
+  font-size: .7rem;
+  padding: 5px;
+  font-family: 'Montserrat', sans-serif; }
+  footer .hotpink {
+    background-color: hotpink;
+    color: #fff;
+    padding: 0 5px;
+    border-radius: 5px;
+    font-family: 'Pacifico', cursive;
+    font-size: .9rem;
+    float: right; }
+  footer a {
+    color: #eee; }
